@@ -3,7 +3,7 @@ import { Theme } from "@mui/material";
 export const paperStyling = (theme: Theme) => ({
     // ...theme.typography.button,
     color: theme.palette.primary.main,
-    padding: 5,
+    padding: 3,
     height: '100%'
 }) as const;
 
