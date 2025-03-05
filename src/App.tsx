@@ -62,7 +62,7 @@ function App() {
                     <Grid size={{ xs: 12, md: 6 }} >
                         <Grouping groupHeading='Creek Flooding Locations'>
                             <Reference
-                                referenceText='ABC Alfred Interactive Map is property of ABC News, article found on can be found'
+                                referenceText='Google Maps Creek Flooding was created by Brisbane City Council. Link to original can be found'
                                 referenceURL="https://www.brisbane.qld.gov.au/community-and-safety/community-safety/disasters-and-emergencies/creek-flooding-alerts"
                             />
                             <iframe src="https://www.google.com/maps/d/embed?mid=1O8DXyiUdiO6058LFEIF__lmVfmI54GM&ehbc=2E312F" /*width="640" height="480"*/ width="100%" height="480"></iframe>
