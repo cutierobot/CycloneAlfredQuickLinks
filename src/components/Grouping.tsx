@@ -16,7 +16,6 @@ const Heading = ({ groupHeading }: GroupingProps) => {
             <Typography
                 variant="h3"
                 id={groupHeading + "Heading"}
-                // sx={{ color: '#ECECEC' }}
             >
                 {groupHeading}
             </Typography>
@@ -36,19 +35,17 @@ export default function Grouping(props: GroupingProps) {
             elevation={5}
             square={false}
             sx={paperStyling}
+            className="GroupingPaper"
         >
             <Grid
                 container
-                id="QuickLinkGrid"
+                className="GroupingGrid"
                 spacing={2}
                 sx={{ justifyContent: 'left' }}
-                // size={{xs: 12, md: 4}}
             >
                 <Heading groupHeading={groupHeading} />
                 {children}
             </Grid>
-
-            {/* <iframe src="https://www.google.com/maps/d/embed?mid=1O8DXyiUdiO6058LFEIF__lmVfmI54GM&ehbc=2E312F" width="640" height="480"></iframe> */}
         </Paper>
     );
 }

@@ -31,13 +31,11 @@ export default function Reference(props: ReferenceProps) {
                 spacing={1}
                 sx={{ justifyContent: 'left' }}
             >
-                <Grid color={'orange'} >
+                <Grid size={1} color={'orange'} >
                     <HelpCenterIcon />
                 </Grid>
 
-                <Grid
-                    size={10}
-                >
+                <Grid size={10} >
                     {referenceText} <Link href={referenceURL} sx={{ color: 'blue' }}>here</Link>
                 </Grid>
             </Grid>
