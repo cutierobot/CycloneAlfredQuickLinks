@@ -7,6 +7,7 @@ import OutletIcon from '@mui/icons-material/Outlet';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import FloodIcon from '@mui/icons-material/Flood';
 import SchoolIcon from '@mui/icons-material/School';
+import TsunamiIcon from '@mui/icons-material/Tsunami';
 
 import Grouping from "./Grouping";
 import { quickLinksStyling } from "../Styles";
@@ -107,6 +108,12 @@ export default function QuickLinks() {
                 text='List of Schools closed'
             >
                 <SchoolIcon color='inherit' sx={{ paddingRight: '5px' }} />
+            </QuickLink>
+            <QuickLink
+                url='https://fam.brisbane.qld.gov.au/?page=Map---Standard'
+                text='Brisbane Flood Map'
+            >
+                <TsunamiIcon color='inherit' sx={{ paddingRight: '5px' }} />
             </QuickLink>
         </Grouping>
     )
