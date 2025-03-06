@@ -8,6 +8,10 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import FloodIcon from '@mui/icons-material/Flood';
 import SchoolIcon from '@mui/icons-material/School';
 import TsunamiIcon from '@mui/icons-material/Tsunami';
+import CampaignIcon from '@mui/icons-material/Campaign';
+import CycloneIcon from '@mui/icons-material/Cyclone';
+import LiveHelpIcon from '@mui/icons-material/LiveHelp';
+import SystemSecurityUpdateWarningIcon from '@mui/icons-material/SystemSecurityUpdateWarning';
 
 import Grouping from "./Grouping";
 import { quickLinksStyling } from "../Styles";
@@ -28,7 +32,7 @@ function QuickLink(props: QuickLinkGridProps) {
     return (
         <Grid
             size={{ xs: 12, md: 12 }}
-            // color='#ECECEC'
+        // color='#ECECEC'
         >
             <Link
                 href={url}
@@ -54,15 +58,25 @@ export default function QuickLinks() {
             groupHeading="Quick Links"
         >
             <QuickLink
+                url='https://www.brisbane.qld.gov.au/community-and-safety/community-safety/disasters-and-emergencies/brisbane-severe-weather-alert'
+                text='Sign up to Brisbane Severe Weather Alert System'
+            >
+                <CampaignIcon color='inherit' sx={{ paddingRight: '5px' }} />
+            </QuickLink>
+
+            <QuickLink
+                url='http://www.bom.gov.au/products/IDQ65002.shtml'
+                text='TROPICAL CYCLONE FORECAST TRACK MAP'
+            >
+                <CycloneIcon color='inherit' sx={{ paddingRight: '5px' }} />
+            </QuickLink>
+
+            <QuickLink
                 url='https://qldtraffic.qld.gov.au/'
                 text='QLD Traffic Road Closures'
             >
                 <RemoveRoadIcon color='inherit' sx={{ paddingRight: '5px' }} />
             </QuickLink>
-            <QuickLink
-                url='http://www.bom.gov.au/products/IDQ65002.shtml'
-                text='TROPICAL CYCLONE FORECAST TRACK MAP'
-            />
 
             <QuickLink
                 url='https://www.brisbane.qld.gov.au/community-and-safety/community-safety/disasters-and-emergencies/emergency-dashboard'
@@ -75,18 +89,22 @@ export default function QuickLinks() {
                 url='https://www.brisbane.qld.gov.au/community-and-safety/community-safety/disasters-and-emergencies/creek-flooding-alerts'
                 text='Creek Flooding Alerts'
             >
-                <FloodIcon color='inherit' sx={{ paddingRight: '5px' }}/>
+                <FloodIcon color='inherit' sx={{ paddingRight: '5px' }} />
             </QuickLink>
 
             <QuickLink
                 url='https://www.getready.qld.gov.au/news/tropical-cyclone-alfred-march-2025'
                 text='Get Ready Queensland Alfred updates'
-            />
+            >
+                <SystemSecurityUpdateWarningIcon color='inherit' sx={{ paddingRight: '5px' }} />
+            </QuickLink>
 
             <QuickLink
                 url='https://www.getready.qld.gov.au/cyclone-alfred-faqs'
                 text="Get Ready Queensland - Alfred FAQ's"
-            />
+            >
+                <LiveHelpIcon color='inherit' sx={{ paddingRight: '5px' }} />
+            </QuickLink>
 
             <QuickLink
                 url='https://www.energex.com.au/outages/outage-finder/outage-finder-map/'
